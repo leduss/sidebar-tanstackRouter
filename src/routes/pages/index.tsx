@@ -1,0 +1,14 @@
+import Title from '@/components/title';
+import { FileRoute } from '@tanstack/react-router';
+
+export const Route = new FileRoute('/').createRoute({
+  component: Home,
+});
+
+function Home() {
+  return (
+    <div className="p-2">
+      <Title title="Home" />
+    </div>
+  );
+}
